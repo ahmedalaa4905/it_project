@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <div class = "headlogo">
+        <link rel="icon" href="media/logo.jpg" type="image/jpg">
+    </div>
+    
+</head>
+<body style="background-color:#040f0f;" onclick="hideSearch()" onmouseover="blurContent(event)">
+
+    <div class="navbar" onclick="event.stopPropagation();">
+        <div class="left-section">
+            <div class="logo-container" onclick="window.location.href='home.html'">
+                <img src="media/logo.jpg" alt="Big Logo" class="big-logo">
+                <span class="logo-name">Animals</span>
+            </div>
+        </div>       
+        <div class="center-section">
+        <a href="profile.html">Profile</a>
+        <div class="dropdown">
+            <button class="dropbtn">Animals</button>
+            <div class="dropdown-content">
+                <a href="#sea">Sea</a>
+                <a href="#air">Air</a>
+                <a href="#earth">Earth</a>
+                <a href="#extinct">Extinct</a>
+            </div>
+        </div>
+    </div>
+    <div class="right-section">
+        <a href="login.html">Login</a>
+        <a href="registration.html">Register</a>
+    </div>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <i class="fas fa-search" id="searchIcon" onclick="toggleSearch(event)"></i>
+        </div>
+    </div>
+        <div class="about-us-message">
+        <h1>About Us</h1>
+        <p>
+            Welcome to Animals, where our passion for the natural world drives our mission. Meet the dedicated team behind our platform:
+        </p>
+        <ol>
+            <li><strong>Ahmed Mohamed Ramdan:</strong> A wildlife enthusiast and our visionary leader. Ahmed's commitment to conservation and education inspires us all.</li>
+            <li><strong>Ahmed Alaa Eldin:</strong> With a background in zoology, Ahmed brings scientific rigor to our content. His expertise ensures accuracy and depth in our animal profiles.</li>
+            <li><strong>Adham Mohsen:</strong> Adham's creativity shines through captivating articles and engaging visuals. He's the artistic soul of our team.</li>
+            <li><strong>Ahmed Alaa:</strong> Our tech wizard. Ahmed ensures our website runs smoothly, making animal knowledge accessible to everyone.</li>
+            <li><strong>Othman:</strong> The backbone of our operations. Othman manages logistics, partnerships, and keeps our ship sailing.</li>
+            <li><strong>Ahmed Sayed:</strong> Our community builder. Ahmed connects with fellow animal lovers, fostering a sense of belonging.</li>
+        </ol>
+        <p>
+            Together, we're on a mission to celebrate the diversity of life on Earth, raise awareness about endangered species, and ignite curiosity in people of all ages. Join us in exploring the wonders of the animal kingdom!
+        </p>
+    </div>
+
+<form id="feedback-form" class="feedback-form">
+    <h2>Feedback Form</h2>
+
+    <label for="name">Name (Optional):</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="email">Email Address (Optional):</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email ">
+
+    <label for="feedback-type">Feedback Type:</label>
+    <select id="feedback-type" name="feedback-type">
+        <option value="complaint">Complaint</option>
+        <option value="suggestion">Suggestion</option>
+    </select>
+
+    <label for="feedback-message">Message:</label>
+    <textarea id="feedback-message" name="feedback-message" rows="5" placeholder="Enter your feedback here"></textarea>
+
+    <button type="submit">Submit Feedback</button>
+</form>
+<div class="social-section">
+    <a href="https://www.facebook.com/wc.helwan" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+</div>
+    <script>
+    function toggleSearch(event) {
+    var searchInput = document.getElementById("searchInput");
+    
+    if (searchInput.style.display === "none" || searchInput.style.display === "") {
+        searchInput.style.display = "block";
+        searchInput.focus();
+        searchInput.classList.add("active");
+    } else {
+        searchInput.style.display = "none";
+        searchInput.classList.remove("active");
+    }
+
+    event.stopPropagation();
+}
+    function hideSearch() {
+        var searchInput = document.getElementById("searchInput");
+        searchInput.style.display = "none";
+            searchInput.classList.remove("active");
+    } 
+</script>
+    
+
+</body>
+</html>

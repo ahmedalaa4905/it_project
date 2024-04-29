@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Animals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <div class = "headlogo">
+        <link rel="icon" href="media/logo.jpg" type="image/jpg">
+    </div>
+    
+</head>
+<body style="background-color:#040f0f;" onclick="hideSearch()" onmouseover="blurContent(event)">
+
+    <div class="navbar" onclick="event.stopPropagation();">
+        <div class="left-section">
+            <div class="logo-container" onclick="window.location.href='#'">
+                <img src="media/logo.jpg" alt="Big Logo" class="big-logo">
+                <span class="logo-name">Animals</span>
+            </div>
+        </div>       
+        <div class="center-section">
+        <a href="profile.html">Profile</a>
+        <div class="dropdown">
+            <button class="dropbtn">Animals</button>
+            <div class="dropdown-content">
+                <a href="#sea">Sea</a>
+                <a href="#air">Air</a>
+                <a href="#earth">Earth</a>
+                <a href="#extinct">Extinct</a>
+            </div>
+        </div>
+    </div>
+    <div class="right-section">
+        <a href="login.html">Login</a>
+        <a href="registration.html">Register</a>
+        <a href="about-us.html">About</a>
+    </div>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <i class="fas fa-search" id="searchIcon" onclick="toggleSearch(event)"></i>
+        </div>
+    </div>
+    
+    <div class = "wallpaperanimal">  
+        <img src="media/wall.jpg" alt="wallpaper" ">
+        <div class="banner-text">
+            <h4>discover animals world</h4>
+            <pre>
+                <p>Embark on an exciting journey
+to explore the diverseand magnificent world of animals. 
+From the depths of the oceans to the vast skies above, 
+uncover the wonders of nature's most incredible creatures. 
+Whether you're passionate about marine life, 
+fascinated by birds in flight, 
+or captivated by the majestic beasts of the land, 
+our curated collection of information and images will inspire and educate. 
+Join us in celebrating the beauty and diversity of the animal kingdom!</p>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="body-content">
+    <h2>Animal Species Categories</h2>
+    <div class="categories">
+        <div class="category" data-img="media/sea.jpg" onclick="window.location.href='#sea'">
+            <img src="media/sea.jpg" alt="Sea" class="category-img">
+            <div class="category-content">
+                <h3>Sea</h3>
+                <p>Discover creatures of the sea...</p>
+            </div>
+        </div>
+        <div class="category" data-img="media/air.jpg" onclick="window.location.href='#air'">
+            <img src="media/bird.jpg" alt="Air" class="category-img">
+            <div class="category-content">
+                <h3>Air</h3>
+                <p>Explore birds and flying creatures...</p>
+            </div>
+        </div>
+        <div class="category" data-img="/home/ahmedye/it_project/media/earth.jpg" onclick="window.location.href='#earth'">
+            <img src="media/lion.jpg" alt="Earth" class="category-img">
+            <div class="category-content">
+                <h3>Earth</h3>
+                <p>Learn about creatures of the land...</p>
+            </div>
+        </div>
+        <div class="category" data-img="media/extinct.jpg" onclick="window.location.href='#extinct'">
+            <img src="media/dinasour.jpeg" alt="Extinct" class="category-img">
+            <div class="category-content">
+                <h3>Extinct</h3>
+                <p>Discover extinct species...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="social-section">
+    <a href="https://www.facebook.com/wc.helwan" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="about-us.html" class="about-link">About Us</a>
+    <pre>
+    <p class="who-we-are-message">Who We Are: We are passionate about animals and dedicated to 
+providing you with information about the fascinating world of animals. 
+Join us in exploring and learning more about these amazing creatures!</p></pre>
+</div>
+
+
+
+    <script>
+    function toggleSearch(event) {
+    var searchInput = document.getElementById("searchInput");
+    
+    if (searchInput.style.display === "none" || searchInput.style.display === "") {
+        searchInput.style.display = "block";
+        searchInput.focus();
+        searchInput.classList.add("active");
+    } else {
+        searchInput.style.display = "none";
+        searchInput.classList.remove("active");
+    }
+
+    event.stopPropagation();
+}
+
+    function hideSearch() {
+        var searchInput = document.getElementById("searchInput");
+        searchInput.style.display = "none";
+            searchInput.classList.remove("active");
+    }
+
+
+    
+</script>
+    
+
+</body>
+</html>

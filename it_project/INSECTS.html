@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="INSECTS.css">
+    <title>Animals | Insects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+
+    <div class="navbar" onclick="event.stopPropagation();">
+        <div class="left-section">
+            <div class="logo-container" onclick="window.location.href='#'">
+                <img src="media/logo.jpg" alt="Big Logo" class="big-logo">
+                <span class="logo-name">Animals</span>
+            </div>
+            <img src="media/moon.png" id="icon">
+        </div>
+        <div class="center-section">
+            <a href="profile.html">Profile</a>
+            <div class="dropdown">
+                <button class="dropbtn">Animals</button>
+                <div class="dropdown-content">
+                    <a href="#sea">Sea</a>
+                    <a href="#air">Air</a>
+                    <a href="#earth">Earth</a>
+                    <a href="#extinct">Extinct</a>
+                    <a href="#Insects">Insects</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+            <a href="about-us.html">About</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <i class="fas fa-search" id="searchIcon" onclick="toggleSearch(event)"></i>
+        </div>
+    </div>
+
+    <div class="Header">
+        <h2>Get to Know a Couple of Insects!</h2>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="media/hercules beetles.jpg">
+            <div class="card-content">
+                <h1>Hercules Beetle</h1>
+                <p>The Dynastes hercules or the Hercules beetle is a species of rhinoceros beetle native to the rainforests of
+                     Southern Mexico, Central America, South America, and the Lesser Antilles.
+                     It is the longest extant species of beetle in the world, 
+                     and is also one of the largest flying insects in the world.
+                </p>
+                <a href="hercules_beetle.html" class="card-button">Learn More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="media/bee.jpeg">
+            <div class="card-content">
+                <h1>The Bee</h1>
+                <p>Bees are flying insects and are frequently observed visiting flowers throughout blooming periods in the spring and summer.
+                     Like all insects, bees have three pairs of legs, antennae, and three 
+                     body segments called a head, thorax and abdomen.
+                </p>
+                <a href="BEE.html" target="_blank" class="card-button">Learn More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="media/ladybug.jpg">
+            <div class="card-content">
+                <h1>Lady Bug</h1>
+                <p>Coccinellidae is a widespread family of small beetles. They are commonly known as
+                    ladybugs in North America and ladybirds in the United Kingdom; "lady" refers to mother Mary
+                    Entomologists use the names ladybird beetles or lady beetles to avoid confusion with true bugs.
+                </p>
+                <a href="lady_bug.html" class="card-button">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: Example123@info.com</p>
+                <p>Phone: +200 12345 67890</p>
+                <p>Address: Helwan University</p>
+            </div>   
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="list">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function toggleSearch(event) {
+            var searchInput = document.getElementById("searchInput");
+            if (searchInput.style.display === "none" || searchInput.style.display === "") {
+                searchInput.style.display = "block";
+                searchInput.focus();
+                searchInput.classList.add("active");
+            } else {
+                searchInput.style.display = "none";
+                searchInput.classList.remove("active");
+            }
+            event.stopPropagation();
+        }
+
+        function hideSearch() {
+            var searchInput = document.getElementById("searchInput");
+            searchInput.style.display = "none";
+            searchInput.classList.remove("active");
+        }
+    </script>
+
+
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        
+    }
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+

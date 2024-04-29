@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="INSECTS.css">
+    <title>Animals | Insects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+
+    <div class="navbar" onclick="event.stopPropagation();">
+        <div class="left-section">
+            <div class="logo-container" onclick="window.location.href='#'">
+                <img src="media/logo.jpg" alt="Big Logo" class="big-logo">
+                <span class="logo-name">Animals</span>
+            </div>
+        </div>
+        <div class="center-section">
+            <a href="profile.html">Profile</a>
+            <div class="dropdown">
+                <button class="dropbtn">Animals</button>
+                <div class="dropdown-content">
+                    <a href="#sea">Sea</a>
+                    <a href="#air">Air</a>
+                    <a href="#earth">Earth</a>
+                    <a href="#extinct">Extinct</a>
+                    <a href="#Insects">Insects</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+            <a href="about-us.html">About</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <i class="fas fa-search" id="searchIcon" onclick="toggleSearch(event)"></i>
+        </div>
+    </div>
+
+
+
+    <div class="background">
+        
+    </div>
+
+    
+
+        <div class="text">
+            <h1>The Bee!</h1>
+            
+            <p>Bees, with their intricate social structures and vital role as pollinators, are essential components of ecosystems worldwide. From the bustling hives of honeybees to the solitary nests of native species, bees play a crucial role in the reproduction of flowering plants and the production of fruits and seeds. 
+            However, bees face numerous threats, including habitat loss, pesticide exposure, and climate change, which jeopardize
+            their populations and the ecosystems they support. Conservation efforts aimed at protecting bee habitats, reducing pesticide use, and raising
+            awareness about the importance of bees are crucial for ensuring their survival and the continued functioning of ecosystems.</p>
+        </div>
+
+        <div class="bee-images">
+            <img src="media/bee1.jpg" alt="Bee 1">
+            <img src="media/honey-bee-4.jpg" alt="Bee 2">
+            <img src="media/bee3.jpg" alt="Bee 3">
+            <img src="media/bee4.jpg" alt="Bee 4">
+            <img src="media/bee5.jpg" alt="Bee 5">
+        </div>
+        
+ 
+
+
+    <div class="video-container">
+        <video class="VID" controls>
+          <source src="media/y2mate.is - Amazing Time-Lapse Bees Hatch Before Your Eyes National Geographic-f6mJ7e5YmnE-720p-1714380987.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video class="VID" controls>
+          <source src="media/y2mate.is - Wild Honey Harvesting Satisfying Honeycomb is 14kg Delicious Honey-qgkVdMs5jMQ-720p-1714394862.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: Example123@info.com</p>
+                <p>Phone: +200 12345 67890</p>
+                <p>Address: Helwan University</p>
+            </div>   
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Register</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="list">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function toggleSearch(event) {
+            var searchInput = document.getElementById("searchInput");
+            if (searchInput.style.display === "none" || searchInput.style.display === "") {
+                searchInput.style.display = "block";
+                searchInput.focus();
+                searchInput.classList.add("active");
+            } else {
+                searchInput.style.display = "none";
+                searchInput.classList.remove("active");
+            }
+            event.stopPropagation();
+        }
+
+        function hideSearch() {
+            var searchInput = document.getElementById("searchInput");
+            searchInput.style.display = "none";
+            searchInput.classList.remove("active");
+        }
+    </script>
+
+</body>
+</html>

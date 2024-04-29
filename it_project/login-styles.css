@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #040f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    min-height: 100vh;}
+
+.login-container {
+    background-color: #248232;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 200px;}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.navbar {
+    background-color: #040f0f;
+    padding: 7px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a, .home-button {
+    color: #fcfffc;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover, .home-button:hover {
+    background-color: #248232;
+}
+
+.navbar img {
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.big-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.logo-name {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.home-button {
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #45a049;
+}
+
+.search-container {
+    position: relative;
+}
+
+.navbar input[type="text"] {
+    display: none;
+    padding: 10px 40px 10px 10px;
+    width: 200px;
+    border: 1px solid #149c14;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #2d3a3a;
+    color: #248232;
+}
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 98%;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+button:hover {
+    background-color: #00b300;
+}
+.footer {
+    background-color: #040f0f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 14px;
+}
+.social-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    color: #fcfffc;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #248232;
+}
+
+.about-link {
+    margin-right: 20px;
+    color: #fcfffc;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.about-link:hover {
+    color: #248232;
+}
+
+.who-we-are-message {
+    margin-right: 15px;
+    color: #fcfffc;
+    font-size: 20px;
+}
